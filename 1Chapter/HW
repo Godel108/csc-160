@@ -1,0 +1,14 @@
+HW 1
+
+#10
+What kind of errors are reported by a compiler?
+#14
+What are the advantages of problem analysis and algorithm design over directly writing a program in a high-level language?
+#18
+To make a profit, the prices of the items sold in a furniture store are marked up by 80%.  After marking up the prices each item is put on sale at a discount of 10%.  Design an algorithm to find the selling price of an item sold at the furniture store.  What information do you need to find the selling price?
+
+#20
+Jason typically uses the Internet to buy various items.  If the total cost of the items ordered, at one time, is $200 or more, then the shipping and handline is free; otherwise, the shipping and handling is $10 per item.  Design an algorithm that prompts Jason to enter the number of items ordered and the price of each item.  The algorithm then outputs the total billing ammount.  Your algorithm must use a loop (repetition structure) to get the price of each item.  (For simplicity, you may assume that Jason orders no more than five items at a time.)
+
+#22
+An ATM allows a customer to withdraw a maximum of $500 per day.  If a customer withdraws more than #300, the service charge is 4% of the amoundt over $300.  If the customer does not have sufficient money in the account, the ATM informs the customer about the insufficient funds and gives the customer the option to withdraw the money for a service charge of $25.00.  If there is not money in the account or if the account ablance is negative, the ATM does not allow the customer to withdraw any money.  If the amount to be withdrawn is greater than $500, the ATM informs the customer about the maximum amount that can be withdrawn.  Write an alogrithm that allows the customer to enter the amount to be withdrawn.  The algorithm then checks the total amount in the account, dispenses the money to the customer, and debits the account by the amount withdrawn and the service charges, if any.
