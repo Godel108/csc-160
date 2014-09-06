@@ -1,6 +1,7 @@
 //Dominique Ingoglia
 //09/05/14
 //Programming assignment 1
+//Chapter 2, Problem #3
 
 
 //include statement (s)
