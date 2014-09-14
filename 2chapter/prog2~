@@ -1,0 +1,24 @@
+//Dominique Ingoglia
+//09/12/14
+//Programming assignment 2
+//Chapter 2, Problem #11
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+  cout << "Please enter five decimals: /n" << "Decimal 1:";
+  cin  >> dec1;
+  cout << "Decimal 2:";
+  cin  >> dec2;
+  cout << "Decimal 3:";
+  cin  >> dec3;
+  cout << "Decimal 4:";
+  cin  >> dec4;
+  cout << "Decimal 5:";
+  cin  >> dec5;
+
+ return 0;
+}
+
