@@ -1,0 +1,42 @@
+//Calculate the total ticket amount and sales after each game
+
+#include <fstream>
+#include <iostream>
+
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+
+  ifstream inFile;
+  ifstream outFile;
+  ofstream outData;
+  float box;
+  float sideline;
+  float premium;
+  float general;  
+
+
+  inFile.open ("Ch3_Ex5Data.txt");
+  outData.open ("Ch3_Ex5Out.txt");
+  
+  inFile.ignore(4, ' ') >> box;
+  inFile.ignore(5, ' ') >> sideline;    
+  inFile.ignore(4, ' ') >> premium;
+  inFile.ignore(4, ' ') >> general;
+
+  outData << "Number of tickets sold = " << box + sideline + premium + general << "\n" << endl;
+
+  outData << fixed << showpoint;
+  outData << setprecision(2);
+
+  outData << "Sale amount = $" << box*250 + sideline*100 + premium*50 + general*25 << endl; 
+    
+  inFile.close();
+  outData.close();
+
+
+  return 0;
+}

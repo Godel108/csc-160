@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+//Calculate the number of containers and boxes per amount of cookies and print the number of left over cookies.
+int main()
+{
+  //define the variables
+  int cookies;
+  int container;
+  int box;
+  int fin_box;
+  int fin_cookies;
+  int fin_container;
+
+  //gather the required data
+    cout << "Enter the number of cookies: ";
+    cin >> cookies;
+    cout << "Enter the number of cookies per box: ";
+    cin >> box;
+    cout << "Enter the number of boxes per container: ";
+    cin >> container;
+
+    //calculate the number of containers and boxes per cookies
+      fin_cookies = cookies % box;
+      fin_box = cookies / box;
+      fin_container = fin_box / container;	
+
+     //output the number of containters, boxes and cookies calculated
+      cout << "\nTotal number of containers: " 
+	   << fin_container << endl;
+      cout << "Total number of boxes: " << fin_box
+	   << endl;
+
+      if (fin_cookies != 0)
+      cout << "Total number of remaining cookies: "
+	   << fin_cookies << endl;
+      else
+	cout << "No extra cookies." << endl;
+
+      cout << endl;
+      return 0;
+}
+    

@@ -1,0 +1,106 @@
+﻿Computer Science 160
+Homework 3
+Dominique Ingoglia
+Problems: 4,6,10,14,22
+
+#4
+a. x=38 y=26 symbol=2
+x=38 and y=26 since x and y are both type ‘int’ and the space determines
+the end point of the first ‘int’ and the beginning of the next ‘int’.
+The ‘cin.ignore(100, ‘\n’)’, ignores 100 characters or until '\n’ is
+located, then it will assign the next character/s to ‘symbol’. Since
+'symbol’ is type 'char’, it will only assign '2' to 'symbol’.
+
+b. x=38 y=67 symbol=’ ‘
+The x input is the same as before, while the y input comes after the ‘*’
+character instead of ‘\n’. Since ‘cin.get’ is used for ‘symbol’, the
+result is a white space, since ‘cin.get’ changes the default of skipping
+whitespace when inputing variables.
+
+c. y=38 x=24 symbol=$
+The y input is the same as x in sections a and b. x is that same as y in
+section a. For ‘symbol’ the white space is skipped as default, assigning
+$ to the variable.
+
+d. symbol=3 x=67 y=24
+Symbol takes the first char as its value. Characters up to ‘*' are
+ignored and ‘67‘ is the input for x. The rest of the characters are
+ignored on that line and 24 is the value for y.
+
+e. x=24 symbol=$ y=6338 y=26 symbol=2
+x=38 and y=26 since x and y are both type ‘int’ and the space determines
+the end point of the first ‘int’ and the beginning of the next ‘int’.
+The ‘cin.ignore(100, ‘\n’)’, ignores 100 characters or until '\n’ is
+located, then it will assign the next character/s to ‘symbol’. Since
+'symbol’ is type 'char’, it will only assign '2' to 'symbol’.
+
+#6
+a. x=35 y=62 ch= ‘. ' z=78 (the .0 is left off of the float for variable z)
+b. x=86 y=32 ch='A’ z=92.6
+c. x=12 y=0 z=6.90703e-310 
+
+#10
+
+16
+15
+32
+6
+243
+Length of message = 29
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#14
+
+#include <iostream>
+#include <iomanip>
+
+using namespace std;
+
+int main()
+{
+char x = ' ';
+cout << setfill('*');
+cout << setw(36) << x << endl;
+
+return 0;
+}
+
+
+#22
+
+#include <fstream>
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+
+  ifstream inFile;
+  int acctNumber;
+  string accountType;
+  double balance;
+
+  inFile.open ("stream.dat");
+  inFile >> acctNumber >> accountType
+      >> balance;
+  inFile.close();
+  
+  return 0;
+}
+
+
