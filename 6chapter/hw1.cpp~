@@ -1,0 +1,13 @@
+#include <cctype>
+#include <iostream>
+
+using namespace std;
+
+int main ()
+{
+  char ch;
+
+  cout << "1. " << static_cast<char> (toupper ('$')) << endl;
+
+return 0;
+}
