@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+struct partsType
+{
+  string partName;
+  int partNum;
+  double price;
+  int quantitiesInStock;
+};
+
+
+main (){
+  partsType inventory[100];
+  int index;
+
+  for (index = 0; index < 100; index++)
+    { inventory[index].partName;
+      inventory[index].partNum = -1;
+      inventory[index].price;= 0.0
+      inventory[index].quantitiesInStock = 0;
+    }
+ 
+
+
+  return 0;
+}
